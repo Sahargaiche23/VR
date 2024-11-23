@@ -1,0 +1,88 @@
+/* Style pour les cartes de packs */
+.pack-card {
+    border: 2px solid #490ea7; /* Bordure colorée pour démarquer les packs */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pack-card:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Effet d'ombre renforcé */
+}
+
+/* Spécifique pour Pack Premium */
+.pack-card.premium {
+    background: linear-gradient(135deg, #FFD700, #FFC107); /* Dégradé doré */
+    color: #333;
+}
+
+.pack-card.premium .card-body h5 {
+    color: #000; /* Texte contrasté */
+    font-weight: bold;
+}
+
+/* Spécifique pour Pack Famille */
+.pack-card.family {
+    background: linear-gradient(135deg, #4CAF50, #81C784); /* Dégradé vert */
+    color: white;
+}
+
+.pack-card.family .card-body h5 {
+    color: #fff; /* Texte contrasté */
+    font-weight: bold;
+}
+
+/* Destinations Cards (Héritées) */
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Légère élévation */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(to right, #002f4b, #dc4225);    color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  position: relative;
+  left: 23px;
+  bottom: 4px;
+  
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}

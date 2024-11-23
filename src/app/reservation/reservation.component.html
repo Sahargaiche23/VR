@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+<div class="reservation-container">
+  <h2 class="reservation-title">Réservez Votre Expérience VR</h2>
+  
+  <form class="reservation-form" (ngSubmit)="onSubmit()">
+    <!-- Selection de Destination -->
+    <div class="input-group">
+      <label for="destination">Destination</label>
+      <select id="destination" [(ngModel)]="reservation.destination" name="destination" required>
+        <option *ngFor="let dest of destinations" [value]="dest.name">
+          {{ dest.name }}
+        </option>
+      </select>
+    </div>
+    
+    <!-- Sélection de la Date -->
+    <div class="input-group">
+      <label for="date">Date</label>
+      <input type="date" id="date" [(ngModel)]="reservation.date" name="date" required />
+    </div>
+    
+    <!-- Nombre de Personnes -->
+    <div class="input-group">
+      <label for="people">Nombre de personnes</label>
+      <input type="number" id="people" [(ngModel)]="reservation.people" name="people" min="1" required />
+    </div>
+    
+    <!-- Bouton de Réservation -->
+    <button type="submit" class="btn">Réserver</button>
+  </form>
+</div>

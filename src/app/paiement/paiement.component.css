@@ -1,0 +1,58 @@
+.payment {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.payment .form-group {
+    margin-bottom: 1rem;
+}
+
+.payment label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.payment .form-control {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+}
+
+.payment .btn {
+    background: linear-gradient(to right, #002f4b, #dc4225);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.payment .btn:disabled {
+    background: #ccc;
+}
+
+.payment .error {
+    color: #dc3545;
+    font-size: 0.875rem;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #002f4b, #dc4225);
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
